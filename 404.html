@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saúde Familiar mudou de endereço</title>
+<script>
+  // Leva para o mesmo caminho no endereço novo, mantendo ?busca e #âncora.
+  var resto = location.pathname.replace(/^\/plano-alimentar\/?/, "");
+  location.replace("/saude-familiar/" + resto + location.search + location.hash);
+</script>
+<meta http-equiv="refresh" content="0; url=/saude-familiar/">
+</head>
+<body style="font-family:system-ui,sans-serif;padding:24px">
+<p>O app mudou de endereço. <a href="/saude-familiar/">Abrir o Saúde Familiar</a>.</p>
+<p>Seus dados continuam salvos neste aparelho. Se o app estava instalado, instale de novo pelo endereço novo.</p>
+</body>
+</html>
